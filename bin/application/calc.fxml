@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="375.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <FlowPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="49.0" prefWidth="230.0" text="CIS319 Calculator" textFill="#a11717">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="56.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/application/goldie.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </FlowPane>
+      <Label fx:id="label" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="300.0" text="0">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <padding>
+            <Insets right="7.0" />
+         </padding>
+      </Label>
+      <FlowPane prefHeight="291.0" prefWidth="300.0">
+         <children>
+            <Button fx:id="memoryClear" mnemonicParsing="false" onAction="#otherButtonActions" prefHeight="48.5" prefWidth="75.0" text="MC" />
+            <Button fx:id="memoryRecall" mnemonicParsing="false" onAction="#otherButtonActions" prefHeight="48.5" prefWidth="75.0" text="MR" />
+            <Button fx:id="memoryPlus" mnemonicParsing="false" onAction="#otherButtonActions" prefHeight="48.5" prefWidth="75.0" text="M+" />
+            <Button fx:id="divide" mnemonicParsing="false" onAction="#arithmeticButtonAction" prefHeight="48.5" prefWidth="75.0" text="/" />
+            <Button fx:id="clear" mnemonicParsing="false" onAction="#otherButtonActions" prefHeight="48.5" prefWidth="75.0" text="C" />
+            <Button fx:id="clearEntry" mnemonicParsing="false" onAction="#otherButtonActions" prefHeight="48.5" prefWidth="75.0" text="CE" />
+            <Button fx:id="plusOrMinus" mnemonicParsing="false" onAction="#otherButtonActions" prefHeight="48.5" prefWidth="75.0" text="+-" />
+            <Button fx:id="multiply" mnemonicParsing="false" onAction="#arithmeticButtonAction" prefHeight="48.5" prefWidth="75.0" text="*" />
+            <Button fx:id="seven" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.5" prefWidth="75.0" text="7" />
+            <Button fx:id="eight" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.5" prefWidth="75.0" text="8" />
+            <Button fx:id="nine" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.5" prefWidth="75.0" text="9" />
+            <Button fx:id="minus" mnemonicParsing="false" onAction="#arithmeticButtonAction" prefHeight="48.5" prefWidth="75.0" text="-" />
+            <Button fx:id="four" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.5" prefWidth="75.0" text="4" />
+            <Button fx:id="five" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.5" prefWidth="75.0" text="5" />
+            <Button fx:id="six" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.5" prefWidth="75.0" text="6" />
+            <Button fx:id="plus" mnemonicParsing="false" onAction="#arithmeticButtonAction" prefHeight="48.5" prefWidth="75.0" text="+" />
+            <FlowPane prefHeight="97.0" prefWidth="225.0">
+               <children>
+                  <Button fx:id="one" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.5" prefWidth="75.0" text="1" />
+                  <Button fx:id="two" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.5" prefWidth="75.0" text="2" />
+                  <Button fx:id="three" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.5" prefWidth="75.0" text="3" />
+                  <Button fx:id="zero" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="48.5" prefWidth="150.0" text="0" />
+                  <Button fx:id="decimal" mnemonicParsing="false" onAction="#otherButtonActions" prefHeight="48.5" prefWidth="75.0" text="." />
+               </children>
+            </FlowPane>
+            <Button fx:id="equals" mnemonicParsing="false" onAction="#arithmeticButtonAction" prefHeight="97.0" prefWidth="75.0" text="=" />
+         </children>
+      </FlowPane>
+   </children>
+</VBox>
